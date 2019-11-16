@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<link href="AddArticle.css" type="text/css" rel="stylesheet">
+<head>
+ 
+  <title>The Society Mirror</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+
+</head>
+          <form name="contentForm" enctype="multipart/form-data" method="" action="" role="form" data-toggle="validator" novalidate="true">
+
+<body>
+
+<div class="container">
+<h1> Add Article </h1>
+<div class="form-group">
+    <label for="Title">Title : </label>
+    <input type="text" class="form-control" id="Title"  placeholder="Enter Article Title" required="required" data-error="Please Enter Your Article's Name">
+              <div class="help-block with-errors"></div>
+
+	</div>
+	<br>
+	<div class="form-group">
+              <label for="selectGender" >Gender: </label>
+              <select name="selectGender" required="required" data-error="Please Select Your Gender">
+              <option value="">Select Gender -- </option>
+              <option value="Men">Men</option>
+              <option value="Web Women">Women</option>
+              <option value="Others">Others</option>
+           
+              </select>
+              <div class="help-block with-errors"></div>
+            </div>
+			<br>
+	  <div class="form-group">
+    <label for="PublisherName"> Publisher Name: </label>
+    <input type="text" class="form-control" id="PublisherName"  placeholder="Enter Publisher Name" value="" required="required" data-error="Please Enter Your Publisher Name">
+              <div class="help-block with-errors"></div>
+</div>
+	<br>
+
+	 <div class="form-group">
+      <label for="Article">Article:</label>
+      <textarea class="form-control" rows="15" id="Article"  placeholder="Type Your Article " required="required" data-error="Please Type Your Article"></textarea>
+	                <div class="help-block with-errors"></div>
+
+    <label for="Choose Article Image">Choose Article Image : </label>
+     <input type="file" name="pic" accept="image/*">
+</div>
+<br>
+<button type="button" class="btn btn-danger">Cancel </button>
+
+	<button type="button" class="btn btn-success">Publish Article</button>
+	
+	<button type="button" class="btn btn-info">Schedule Article</button>
+	</div>
+
+ 
+</div>
+</body>
+</form>

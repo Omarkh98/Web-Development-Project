@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<link href="TheSocietyMirror.css" type="text/css" rel="stylesheet">
+<head>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+<meta charset=utf-8 />
+    <title> The Society Mirror </title>
+</head>
+<body> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+    function OpenReader() {
+        window.open("TheSocietyMirrorREADER.html");
+    }
+    </script>
+    <div class="TopBar1"> 
+    <a class="AboutUs" href="" onclick="OpenReader()">About Us</a>
+    <a class="Contact Us" href="">Contact Us</a>
+    <a class="Subscribe" href="">Subscribe</a>
+    <a class="Advertise" href="">Advertise</a>
+    <a class="Contribute" href="">Contribute</a>  
+    </div>
+    <div class="TopBar2">
+    <a href="www.facebook.com"><img src="https://i.postimg.cc/4yPNzt9H/Facebook-Home-logo-old-svg.png" title="Facebook"></a>
+    <a href="www.youtube.com"><img src="https://i.postimg.cc/MKZGzsC7/youtube-icon-logo-05-A29977-FC-seeklogo-com.png" title="Youtube"></a>
+    <a href="www.twitter.com"><img src="https://i.postimg.cc/fWfLn4rW/Twitterbird.png" title="Twitter"></a>
+    <button class="button button1" onclick="LoginPage()">Log In</button>
+    <button class="button button2" onclick="SignUpPage()">Sign Up</button>
+    <script type="text/javascript">
+        function LoginPage() {
+            window.open('LogIn.html','_self');
+        }
+        </script>
+    <script type="text/javascript">
+        function SignUpPage() {
+            window.open('SignUp.html','_self');
+        }
+        </script>
+    </div>
+       <div class="Container">
+           <div class="Logo">
+           <img src="C:\Users\user\Downloads\PICS\SocietyMirror.png">
+           </div>
+           <div class="SearchBar">
+           <form name = "MyForm" method="get">
+           <input type="text" name="Search" placeholder="Search..">
+           </form>
+           </div>
+           <div id="SearchButton"class="SearchButton">
+           <button class="button button3">Search</button>
+           </div>
+           <div class="ToolBar">
+           <button class="TabLinks" onclick="" title="News">News</button>
+           <button class="TabLinks" onclick="" title="Community">Community</button>
+           <button class="TabLinks" onclick="" title="History">History</button>
+           <button class="TabLinks" onclick="" title="Sports">Sports</button>
+           <button class="TabLinks" onclick="" title="Opinion">Opinion</button>
+           <button class="TabLinks" onclick="" title="Calender">Calender</button>
+           <button class="TabLinks" onclick="" title="Marketplace">Marketplace</button>
+           <button class="TabLinks" onclick="" title="E-Edition">E-Edition</button>
+           </div>
+           <div class="MainBodyConatiner">
+           </div>
+    </div>
+    <div class="BackgroundImage">
+    <img src="C:\Users\user\Downloads\PICS\ryan-moreno-99473-unsplash.jpg">
+    </div>
+    
+    </body>
+</html>
+
+<script type="text/javascript">   // Uploading Passport Copy.
+     function readURL(input) {
+            if (input.files && input.files[0]) {
+                
+                var reader = new FileReader(); // Web Apps read files.
+                reader.onload = function (e) {
+                    $('#Passport')
+                        .attr('src', e.target.result)
+                        .width(720)
+                        .height(576);
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>

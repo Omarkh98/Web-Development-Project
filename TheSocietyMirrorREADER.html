@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<link href="TheSocietyMirror.css" type="text/css" rel="stylesheet">
+<link href="TheSocietyMirrorREADER.css" type="text/css" rel="stylesheet">
+<head>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+<meta charset=utf-8 />
+    <title> The Society Mirror - Reader </title>
+</head>
+<body> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <div class="TopBar1"> 
+    <a class="AboutUs" href="">About Us</a>
+    <a class="Contact Us" href="">Contact Us</a>
+    <a class="Subscribe" href="">Subscribe</a>
+    <a class="Advertise" href="">Advertise</a>
+    <a class="Contribute" href="">Contribute</a>  
+    </div>
+    <div class="TopBar2">
+    <a href="www.facebook.com"><img src="https://i.postimg.cc/4yPNzt9H/Facebook-Home-logo-old-svg.png" title="Facebook"></a>
+    <a href="www.youtube.com"><img src="https://i.postimg.cc/MKZGzsC7/youtube-icon-logo-05-A29977-FC-seeklogo-com.png" title="Youtube"></a>
+    <a href="www.twitter.com"><img src="https://i.postimg.cc/fWfLn4rW/Twitterbird.png" title="Twitter"></a>
+    <button class="button button1">Log In</button>
+    <button class="button button2">Sign Up</button>
+    </div>
+       <div class="Container">
+           <div class="Logo">
+           <img src="C:\Users\user\Downloads\PICS\SocietyMirror - CopyREADERRED.png">
+           </div>
+           <div class="SearchBar">
+           <form name = "MyForm" method="get">
+           <input type="text" name="Search" placeholder="Search..">
+           </form>
+           </div>
+           <div id="SearchButton"class="SearchButton">
+           <button id = "SEARCHBUTTON" class="button button3">Search</button>
+           <button class="button buttonMessage" onclick="ContactEditor()">Contact Editor</button>
+            <script type="text/javascript">
+               function  ContactEditor(){
+                   window.open('User.php','_self');
+               }
+               </script>
+           </div>
+           <div class="ToolBar">
+           <button class="TabLinks" onclick="" title="News">News</button>
+           <button class="TabLinks" onclick="" title="Community">Community</button>
+           <button class="TabLinks" onclick="" title="History">History</button>
+           <button class="TabLinks" onclick="" title="Sports">Sports</button>
+           <button class="TabLinks" onclick="" title="Opinion">Opinion</button>
+           <button class="TabLinks" onclick="" title="Calender">Calender</button>
+           <button class="TabLinks" onclick="" title="Marketplace">Marketplace</button>
+           <button class="TabLinks" onclick="" title="E-Edition">E-Edition</button>
+           </div>
+           <div class="MainBodyConatiner">
+           </div>
+           <div class="ArticleONE">
+               <div class="ArticleONEData">
+           <img class="ArticleImage1" src="C:\Users\user\Downloads\PICS\astronomy-beautiful-clouds-355465.jpg">
+           <h3 class="ArticleONEH3"> Myths of Maoism  </h3>
+           <h5 class="ArticleONEH5"> Edward Friedman  </h5>
+           <h5 class="ArticleONEDOT"> . </h5>
+           <h5 class="ArticleONEH5DATE">November 16, 2018</h5>
+           <textarea id="ArticleONEFULL" rows="4" cols="70" readonly>    In recounting how a group of politically engaged scholars sought to extend solidarity to East Asia in the 1968 era, a new book falls into many of the same pitfalls as the scholars it profiles. In 1968, a year of youth rebellions around the globe, graduate students at elite American universities formed the Committee of Concerned Asian Scholars (CCAS), challenging their senior professors’ complicit silence on the Vietnam War. Like those in other academic fields, the Asianists opposed U.S. aggression in Vietnam and racism at home and abroad. They sought a more democratic and ethically committed profession.
+           </textarea>
+               </div>
+          <button id ="ArticleONEEXPAND" class="button button5">Read On</button>
+          <button id ="ArticleONESHRINK" class="button button6" style="display: none"  class="hide">Shrink</button>
+           </div>
+           <div class="ArticleTWO">
+               <div class="ArticleTWOData">
+           <img class="ArticleImage2" src="C:\Users\user\Downloads\PICS\architecture-buildings-city-1139556.jpg">
+           <h3 class="ArticleTWOH3"> Taking Back the Wheel    </h3>
+           <h5 class="ArticleTWOH5">  Kathryn Wells  </h5>
+           <h5 class="ArticleTWODOT"> . </h5>
+           <h5 class="ArticleTWOH5DATE"> August 31, 2018</h5>
+           <textarea id="ArticleTWOFULL" rows="4" cols="70" readonly>    In the future heralded by Silicon Valley, cars will fly and labor will be disposable. But none of this is inevitable. It’s a political choice—that we can still reject.On February 6, 2018, SpaceX launched its Falcon Heavy rocket into space to much fanfare. Never one to misjudge the importance of well-timed publicity, SpaceX founder Elon Musk attached his cherry-red Tesla Roadster to the rocket and shot it into orbit. Images of the car, manned by an intrepid space-exploring mannequin dubbed Starman, were beamed around the world to delighted audiences.There was undoubtedly something fantastic about the image of the faux-astronaut behind the wheel of a convertible car destined for the stars
+           </textarea>
+               </div>
+          <button id ="ArticleTWOEXPAND" class="button button7">Read On</button>
+          <button id ="ArticleTWOSHRINK" class="button button8" style="display: none"  class="hide">Shrink</button>
+           </div>
+    </div>
+    
+    <script type="text/javascript">
+    $(document).ready(function(){
+       $("#ArticleONEEXPAND").on("click", function(){
+          $("#ArticleONEFULL").animate({height:"8em", width:"50em" }, 500);
+          $("#ArticleONESHRINK").show(16);
+       });
+       $("#ArticleONESHRINK").on("click", function(){
+          $("#ArticleONEFULL").animate({height:"2.25em", width:"38.5em" }, 500);
+       });
+          $("#ArticleONESHRINK").on("click", function(){
+          $("#ArticleONESHRINK").hide(20);
+       });
+        
+        $("#ArticleTWOEXPAND").on("click", function(){
+          $("#ArticleTWOFULL").animate({height:"8em", width:"50em" }, 500);
+          $("#ArticleTWOSHRINK").show(16);
+       });
+       $("#ArticleTWOSHRINK").on("click", function(){
+          $("#ArticleTWOFULL").animate({height:"2.25em", width:"38.5em" }, 500);
+       });
+          $("#ArticleTWOSHRINK").on("click", function(){
+          $("#ArticleTWOSHRINK").hide(20);
+       });
+    });
+    </script>
+    
+    <script>
+    $(document).ready(function () {
+        $("#AddButton").on("click", function() {
+             $("#OpenField").slideToggle(300);
+             $("#SaveButton").slideToggle(50);
+             $("#ClearButton").slideToggle(50);
+        });
+    });
+    </script>
+    
+    <script type="text/javascript">
+        function AddFunction() {
+                document.getElementById('ArticleLocation').value += document.getElementById('OpenField').value;
+            }
+    </script> 
+    
+    <script type="text/javascript">
+       function ClearAll() {
+           document.getElementById('OpenField').value="";
+       }
+    </script>
+    
+    <script type="text/javascript">
+       function DeleteArticle() {
+          var X = document.getElementById('ArticleLocation').value = "";
+       }
+    </script>
+    
+    <div class="BackgroundImage">
+    <img src="C:\Users\user\Downloads\PICS\ryan-moreno-99473-unsplash.jpg">
+    </div>
+    
+    </body>
+</html>
+
+<script type="text/javascript">   // Uploading Passport Copy.
+     function readURL(input) {
+            if (input.files && input.files[0]) {
+                
+                var reader = new FileReader(); // Web Apps read files.
+                reader.onload = function (e) {
+                    $('#Passport')
+                        .attr('src', e.target.result)
+                        .width(720)
+                        .height(576);
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
